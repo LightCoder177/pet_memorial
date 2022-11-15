@@ -55,7 +55,10 @@ ROOT_URLCONF = "pet_memorial.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+                    'pet_memorial/templates/',
+                    'pet/templates/',
+                ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
