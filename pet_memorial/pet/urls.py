@@ -5,5 +5,5 @@ from . import views as pet_views
 from .models import Pet
 
 urlpatterns = [
-    path('<slug:slug>/', pet_views.PetDetailView.as_view(), name='pet_details'),
+    path('<slug>/', pet_views.PetDetailView.as_view(), name='pet_details'),
 ]
