@@ -4,5 +4,4 @@ from pet.models import Pet
 
 class PetDetailView(DetailView):
     model = Pet
-    slug_url_kwarg = 'slug'
-    slug_field = 'slug'
+    template_name = "pet_profile.html"
