@@ -4,7 +4,7 @@ from django.utils.text import slugify
 class Pet(models.Model):
     name = models.CharField(max_length=255)
     age = models.IntegerField()
-    slug = models.SlugField(allow_unicode=True, max_length=100, unique=True, default="")
+    slug = models.SlugField(allow_unicode=True, max_length=100, unique=True, default="default_pet_slug")
 
     def __str__(self):
         return self.name
